@@ -12,8 +12,11 @@ export const CounterApp = ({ value }) => {
     }
 
     const handleSubstract = () =>{
-
-        setCounter( counter -  1 );
+        //if (counter != 0)
+        if (counter > 0)
+        {
+            setCounter( counter -  1 );
+        }
 
     }
 
